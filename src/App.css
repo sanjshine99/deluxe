@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'NeueHaasDisplay';
+  src: url('./assets/font/NeueHaasDisplayBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHaasDisplay';
+  src: url('./assets/font/NeueHaasDisplayBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHaasDisplay';
+  src: url('./assets/font/NeueHaasDisplayRoman.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+:root{
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar{
+  width:10px;
+}
+
+::-webkit-scrollbar-track{
+  background: #141414;
+}
+
+::-webkit-scrollbar-thumb{
+
+  background: #ffffff;
+}
+
+body{
+
+  font-family: 'NeueHaasDisplay', sans-serif;
+  
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+

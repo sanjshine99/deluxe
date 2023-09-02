@@ -1,0 +1,9 @@
+/* Video_landing.css (if using a separate CSS file) */
+.component {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc; /* Optional: Add a border for clarity */
+  }
+  
