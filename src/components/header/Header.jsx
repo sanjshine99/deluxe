@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css'; 
 import '../../App.css';
 import logo from '../../assets/Logo.png'
@@ -22,7 +23,7 @@ const Header = () => {
 
   return (
     <header className="header">
-  <div className="header-logo"><img src={logo} alt="" height={50}/></div>
+  <div className="header-logo"><Link to="/"><img src={logo} alt="" height={50}/></Link></div>
   <nav className="header-nav">
     <div className="header-menu" onMouseEnter={() => handleMenuHover('ourRange')} onMouseLeave={() => handleMenuLeave('ourRange')}>
       Our Range
@@ -37,18 +38,37 @@ const Header = () => {
   </nav>
 
   {expandedMenus['ourRange'] && (
-    <div className={`sub-menu ${expandedMenus['ourRange'] ? 'expanded' : ''}`} onMouseEnter={() => handleMenuHover('ourRange')} onMouseLeave={() => handleMenuLeave('ourRange')}>
-      <div>Product 1</div>
-      <div>Product 2</div>
-      <div>Product 3</div>
-    </div>
+     <div className={`sub-menu ${expandedMenus['ourRange'] ? 'expanded' : ''}`} onMouseEnter={() => handleMenuHover('ourRange')} onMouseLeave={() => handleMenuLeave('ourRange')}>
+     <div>
+       <Link to="/stormbreaker19">
+       <p>Stormbreaker 19 image </p>
+       </Link>
+     </div>
+     <div>
+       <Link to="/stormbreaker21">
+         <p>Stormbreaker 21 image </p>
+       </Link>
+     </div>
+   </div>
   )}
 
   {expandedMenus['Resources'] && (
     <div className={`sub-menu ${expandedMenus['Resources'] ? 'expanded' : ''}`} onMouseEnter={() => handleMenuHover('Resources')} onMouseLeave={() => handleMenuLeave('Resources')}>
-      <div>About us</div>
-      <div>Blog</div>
-      <div>Warranty Policy</div>
+      <div>
+       <Link to="/about">
+       <p>About </p>
+       </Link>
+     </div>
+     <div>
+       <Link to="/blog">
+       <p>blog </p>
+       </Link>
+     </div>
+     <div>
+       <Link to="/">
+       <p>Warrenty Policy </p>
+       </Link>
+     </div>
     </div>
   )}
 
