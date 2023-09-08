@@ -1,18 +1,14 @@
-import React from 'react';
-import './Home.css';
-import Video from './homecomponents/Video_landing';
-import Gallery from './homecomponents/Gallery_landing';
-import Reviews from './homecomponents/CustomerReviews';
-import Partners from './homecomponents/Partners';
+import React from "react";
+import "./Home.css";
+import Video from "./homecomponents/Video_landing";
+import Gallery from "./homecomponents/Gallery_landing";
+import Reviews from "./homecomponents/CustomerReviews";
+import Partners from "./homecomponents/Partners";
 
 function Home() {
-
-  
   return (
     <div className="container">
-      <div className="component">
-        <Video />
-      </div>
+      <Video />
       <div className="component">
         <Gallery />
       </div>
@@ -27,4 +23,3 @@ function Home() {
 }
 
 export default Home;
-

@@ -1,9 +1,56 @@
-/* Video_landing.css (if using a separate CSS file) */
 .component {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ccc; /* Optional: Add a border for clarity */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc; /* Optional: Add a border for clarity */
+}
+
+/* Video Landing styling */
+.landing_page_video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.mobile-image {
+  display: none;
+}
+
+/* Gallery Landing styling */
+.gallery_landing_container {
+  text-align: center;
+}
+
+.gallery_landing_heading {
+  font-size: 70px;
+  font-weight: normal;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+}
+
+.grid_item {
+  padding: 16px;
+  text-align: center;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+  .grid_container {
+    grid-template-columns: 1fr;
   }
-  
+
+  .landing_page_video {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
